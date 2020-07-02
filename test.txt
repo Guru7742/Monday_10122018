@@ -1,0 +1,69 @@
+
+
+1.	xform.fact_snp_sub_activity_dna_mob_prepaid ----dwh.fact_snp_subscription_activity snp
+2.		xform.fact_cdr_dna_mob_prepaid ------ cdr
+3.		xform.fact_recharge_dna_mob_prepaid ----recharge
+4.	xform.fact_recharge_dna_mob_prepaid_daily ----recharge 30 days
+5.		xform.fact_bolton_dna_mob_prepaid -----fact_bolton
+6.		xform.fact_mobile_data_dna_mob_prepaid
+7.	temp_xform_fact_mobile_data_network_type_dna_mob_prepaid
+8.	xform.fact_mobile_data_network_type_dna_mob_prepaid
+9.		xform.fact_snp_primary_product_dna_mob_prepaid -----primary product
+10. 	tmp_xform_fact_order ----fact_order
+11. 	xform.fact_dna_mob_prepaid_order-----delete and insert any exisitng data 
+12.	xform.fact_dna_mob_prepaid_device_manager ----
+
+
+
+
+xform.fact_cdr_dna_mob_prepaid
+xform.fact_bolton_dna_mob_prepaid
+xform.fact_mobile_data_dna_mob_prepaid
+xform.fact_recharge_dna_mob_prepaid
+xform.fact_snp_primary_product_dna_mob_prepaid
+
+
+1. BI Estimate
+2. fact dna mobile prepaid base transform rules
+3. DNA prepaid sql final staging load
+4. LLA BI ppt
+5. Mapping rules prepaid dna Category
+6. Mobile prepaid dna pivot view table column
+
+
+Hi Rajesh,
+
+I had Brush up all the DNA related documents which you shared on last Thursday and starting day's. 
+And also I am going through SQL script which you shared in that I Checked 4 xforms 
+
+ 
+1. xform.fact_snp_sub_activity_dna_mob_prepaid ---	snp_sub_activity
+2. xform.fact_cdr_dna_mob_prepaid  --- 			CDR
+3. xform.fact_recharge_dna_mob_prepaid ---		recharge
+4. xform.fact_bolton_dna_mob_prepaid -----		fact_bolton 
+
+Till this 4 xforms I am clear I mean I don't have any doubt and questions on this   remaining xfomrms I will start from today.
+
+Again I am facing this VDI connectivity issue due to that Blox One software. Last night I raised ticket. hope today they will fix it.
+Once it back I will start this remaining xforms 
+
+
+
+
+
+
+
+
+
+
+
+
+5. xform.fact_mobile_data_dna_mob_prepaid ----		fact_mobile_data need to divide by 3 to get the average
+6. xform.fact_mobile_data_network_type_dna_mob_prepaid
+7. xform.fact_snp_primary_product_dna_mob_prepaid ---	primary product
+8. xform.fact_dna_mob_prepaid_order -----		delete and insert any exisitng data 
+9. xform.fact_dna_mob_prepaid_device_manager 
+
+
+
+	fact_mobile_data need to divide by 3 to get the average
